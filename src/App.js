@@ -10,15 +10,17 @@ import { useState } from "react";
 import AddIcon from "@mui/icons-material/Add";
 import CheckIcon from "@mui/icons-material/Check";
 
-
-
 function App() {
   const [step, setStep] = useState(0);
   const [changecolor, setChangeColor] = useState(false);
+  const [changecolor1, setChangeColor1] = useState(false);
 
   const handleButton = () => {
     console.log("change color");
     setChangeColor(!changecolor);
+  };
+  const handleButton1 = () => {
+    setChangeColor1(!changecolor1);
   };
   console.log(step);
   const previoushandle = () => {
@@ -92,7 +94,7 @@ function App() {
                       <AddIcon />
                     </>
                   )}
-                  yello button
+                  Daptacel
                 </Button>
 
                 <Button
@@ -100,7 +102,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Tenivac
                 </Button>
 
                 <Button
@@ -108,7 +110,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  generic
                 </Button>
 
                 <Button
@@ -116,7 +118,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Adacel
                 </Button>
               </div>
             </Container>
@@ -135,7 +137,32 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Quadracel
+                </Button>
+
+                <Button
+                  variant="custom"
+                  onClick={handleButton1}
+                  style={
+                    changecolor1 === true
+                      ? {
+                          backgroundColor: "orange",
+                          height: "50px",
+                          width: "17%",
+                        }
+                      : { borderColor: "black", height: "50px", width: "17%" }
+                  }
+                >
+                  {changecolor1 === true ? (
+                    <>
+                      <CheckIcon />
+                    </>
+                  ) : (
+                    <>
+                      <AddIcon />
+                    </>
+                  )}
+                  Kinrix
                 </Button>
 
                 <Button
@@ -151,15 +178,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
+                  Pediarix
                 </Button>
               </div>
             </Container>
@@ -178,7 +197,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Vaxelis
                 </Button>
 
                 <Button
@@ -186,7 +205,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Boostrix
                 </Button>
 
                 <Button
@@ -194,7 +213,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Vaqta
                 </Button>
 
                 <Button
@@ -202,7 +221,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Havrix
                 </Button>
               </div>
             </Container>
@@ -220,7 +239,7 @@ function App() {
                   style={{ width: "20%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  DTaP-HepB-IPV
                 </Button>
 
                 <Button
@@ -228,16 +247,16 @@ function App() {
                   style={{ width: "20%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  DTaP-IPV-Hib-HepB
                 </Button>
               </div>
             </Container>
           </div>
         </>
       )}
-      {step === 1 && 
-      <>
-      <div>
+      {step === 1 && (
+        <>
+          <div>
             <Container>
               <div
                 style={{
@@ -249,17 +268,8 @@ function App() {
                 }}
               >
                 <Button
-                  variant="custom"
-                  onClick={handleButton}
-                  style={
-                    changecolor === true
-                      ? {
-                          backgroundColor: "orange",
-                          height: "50px",
-                          width: "17%",
-                        }
-                      : { borderColor: "black", height: "50px", width: "17%" }
-                  }
+                  variant="light"
+                  style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   {changecolor === true ? (
                     <>
@@ -270,7 +280,7 @@ function App() {
                       <AddIcon />
                     </>
                   )}
-                  yello button
+                  Apollo Pharmacy
                 </Button>
 
                 <Button
@@ -278,7 +288,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Westminster
                 </Button>
 
                 <Button
@@ -286,7 +296,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Cosme Mati
                 </Button>
 
                 <Button
@@ -294,7 +304,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Global Healthline
                 </Button>
               </div>
             </Container>
@@ -313,7 +323,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Guardian
                 </Button>
 
                 <Button
@@ -321,7 +331,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Koel Colours
                 </Button>
 
                 <Button
@@ -329,7 +339,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  MedPlus Health
                 </Button>
 
                 <Button
@@ -337,7 +347,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  NuFuture Digital 
                 </Button>
               </div>
             </Container>
@@ -356,7 +366,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Sabari Distribution
                 </Button>
 
                 <Button
@@ -364,7 +374,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Trust Chemists 
                 </Button>
 
                 <Button
@@ -372,7 +382,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Vestige Marketing
                 </Button>
 
                 <Button
@@ -380,10 +390,68 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Ajinkya Big Bazar
                 </Button>
               </div>
             </Container>
+          </div>
+        </>
+      )}
+      {step === 2 && (
+        <>
+          <div>
+            <Container>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "20px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginTop: "4%",
+                }}
+              >
+                <Button
+                  variant="light"
+                  style={{ width: "17%", height: "50px", borderColor: "black" }}
+                >
+                  {changecolor === true ? (
+                    <>
+                      <CheckIcon />
+                    </>
+                  ) : (
+                    <>
+                      <AddIcon />
+                    </>
+                  )}
+                  6.00-9.00
+                </Button>
+
+                <Button
+                  variant="light"
+                  style={{ width: "17%", height: "50px", borderColor: "black" }}
+                >
+                  <AddIcon />
+                  9.00-12.00
+                </Button>
+
+                <Button
+                  variant="light"
+                  style={{ width: "17%", height: "50px", borderColor: "black" }}
+                >
+                  <AddIcon />
+                  12.00-3.00
+                </Button>
+
+                <Button
+                  variant="light"
+                  style={{ width: "17%", height: "50px", borderColor: "black" }}
+                >
+                  <AddIcon />
+                  3.00-6.00
+                </Button>
+              </div>
+            </Container>
+
             <Container>
               <div
                 style={{
@@ -398,7 +466,7 @@ function App() {
                   style={{ width: "20%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  6.00-9.00
                 </Button>
 
                 <Button
@@ -406,16 +474,16 @@ function App() {
                   style={{ width: "20%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  9.00-12.00
                 </Button>
               </div>
             </Container>
           </div>
-      </>
-      }
-      {step === 2 && 
-      <>
-      <div>
+        </>
+      )}
+      {step === 3 && (
+        <>
+          <div>
             <Container>
               <div
                 style={{
@@ -427,17 +495,8 @@ function App() {
                 }}
               >
                 <Button
-                  variant="custom"
-                  onClick={handleButton}
-                  style={
-                    changecolor === true
-                      ? {
-                          backgroundColor: "orange",
-                          height: "50px",
-                          width: "17%",
-                        }
-                      : { borderColor: "black", height: "50px", width: "17%" }
-                  }
+                  variant="light"
+                  style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   {changecolor === true ? (
                     <>
@@ -448,7 +507,7 @@ function App() {
                       <AddIcon />
                     </>
                   )}
-                  yello button
+                 Name
                 </Button>
 
                 <Button
@@ -456,7 +515,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                 surname
                 </Button>
 
                 <Button
@@ -464,7 +523,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  FatherName
                 </Button>
 
                 <Button
@@ -472,7 +531,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                    occupation
                 </Button>
               </div>
             </Container>
@@ -491,7 +550,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  aadhar no
                 </Button>
 
                 <Button
@@ -499,7 +558,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                 pan no
                 </Button>
 
                 <Button
@@ -507,7 +566,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  location
                 </Button>
 
                 <Button
@@ -515,85 +574,17 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  address
                 </Button>
               </div>
             </Container>
-            <Container>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "20px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  marginTop: "4%",
-                }}
-              >
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-              </div>
-            </Container>
-            <Container>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "20px",
-                  marginLeft: "13.5%",
-                  marginTop: "4%",
-                }}
-              >
-                <Button
-                  variant="light"
-                  style={{ width: "20%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "20%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-              </div>
-            </Container>
+           
           </div>
-      </>
-      }
-      {step === 3 && 
-      <>
-      <div>
+        </>
+      )}
+      {step === 4 && (
+        <>
+          <div>
             <Container>
               <div
                 style={{
@@ -605,17 +596,8 @@ function App() {
                 }}
               >
                 <Button
-                  variant="custom"
-                  onClick={handleButton}
-                  style={
-                    changecolor === true
-                      ? {
-                          backgroundColor: "orange",
-                          height: "50px",
-                          width: "17%",
-                        }
-                      : { borderColor: "black", height: "50px", width: "17%" }
-                  }
+                  variant="light"
+                  style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   {changecolor === true ? (
                     <>
@@ -626,7 +608,7 @@ function App() {
                       <AddIcon />
                     </>
                   )}
-                  yello button
+                I Know Knew That
                 </Button>
 
                 <Button
@@ -634,7 +616,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                 answer  question
                 </Button>
 
                 <Button
@@ -642,7 +624,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Collect responses
                 </Button>
 
                 <Button
@@ -650,7 +632,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Tally  Responses
                 </Button>
               </div>
             </Container>
@@ -669,7 +651,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Thumbs Up
                 </Button>
 
                 <Button
@@ -677,7 +659,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Thumbs Down
                 </Button>
 
                 <Button
@@ -685,7 +667,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Skills Conference
                 </Button>
 
                 <Button
@@ -693,7 +675,7 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Wonder Box
                 </Button>
               </div>
             </Container>
@@ -712,65 +694,18 @@ function App() {
                   style={{ width: "17%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
+                  Dry-Erase Boards
                 </Button>
 
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-              </div>
-            </Container>
-            <Container>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "20px",
-                  marginLeft: "13.5%",
-                  marginTop: "4%",
-                }}
-              >
-                <Button
-                  variant="light"
-                  style={{ width: "20%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "20%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
               </div>
             </Container>
           </div>
-      </>}
-      {step === 4 && 
-      <>
-      <div>
+        </>
+      )}
+
+      {step === 5 && (
+        <>
+          <div>
             <Container>
               <div
                 style={{
@@ -782,17 +717,8 @@ function App() {
                 }}
               >
                 <Button
-                  variant="custom"
-                  onClick={handleButton}
-                  style={
-                    changecolor === true
-                      ? {
-                          backgroundColor: "orange",
-                          height: "50px",
-                          width: "17%",
-                        }
-                      : { borderColor: "black", height: "50px", width: "17%" }
-                  }
+                  variant="light"
+                  style={{ width: "35%", height: "50px", borderColor: "black" }}
                 >
                   {changecolor === true ? (
                     <>
@@ -803,31 +729,17 @@ function App() {
                       <AddIcon />
                     </>
                   )}
-                  yello button
+                  How healthy do you consider yourself 
                 </Button>
+
+                
 
                 <Button
                   variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
+                  style={{ width: "35%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
+                  How often do you get a health checkup
                 </Button>
               </div>
             </Container>
@@ -843,133 +755,7 @@ function App() {
               >
                 <Button
                   variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-              </div>
-            </Container>
-            <Container>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "20px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  marginTop: "4%",
-                }}
-              >
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-              </div>
-            </Container>
-            <Container>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "20px",
-                  marginLeft: "13.5%",
-                  marginTop: "4%",
-                }}
-              >
-                <Button
-                  variant="light"
-                  style={{ width: "20%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "20%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-              </div>
-            </Container>
-          </div>
-      </>}
-      {step === 5 && 
-      <>
-      <div>
-            <Container>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "20px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  marginTop: "4%",
-                }}
-              >
-                <Button
-                  variant="custom"
-                  onClick={handleButton}
-                  style={
-                    changecolor === true
-                      ? {
-                          backgroundColor: "orange",
-                          height: "50px",
-                          width: "17%",
-                        }
-                      : { borderColor: "black", height: "50px", width: "17%" }
-                  }
+                  style={{ width: "35%", height: "50px", borderColor: "black" }}
                 >
                   {changecolor === true ? (
                     <>
@@ -980,31 +766,17 @@ function App() {
                       <AddIcon />
                     </>
                   )}
-                  yello button
+                 What do you say about your  health
                 </Button>
+
+                
 
                 <Button
                   variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
+                  style={{ width: "35%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
+                  Do you have any chronic diseases
                 </Button>
               </div>
             </Container>
@@ -1020,133 +792,7 @@ function App() {
               >
                 <Button
                   variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-              </div>
-            </Container>
-            <Container>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "20px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  marginTop: "4%",
-                }}
-              >
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-              </div>
-            </Container>
-            <Container>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "20px",
-                  marginLeft: "13.5%",
-                  marginTop: "4%",
-                }}
-              >
-                <Button
-                  variant="light"
-                  style={{ width: "20%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "20%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-              </div>
-            </Container>
-          </div>
-      </>}
-      {step === 6 && 
-      <>
-      <div>
-            <Container>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "20px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  marginTop: "4%",
-                }}
-              >
-                <Button
-                  variant="custom"
-                  onClick={handleButton}
-                  style={
-                    changecolor === true
-                      ? {
-                          backgroundColor: "orange",
-                          height: "50px",
-                          width: "17%",
-                        }
-                      : { borderColor: "black", height: "50px", width: "17%" }
-                  }
+                  style={{ width: "35%", height: "50px", borderColor: "black" }}
                 >
                   {changecolor === true ? (
                     <>
@@ -1157,148 +803,82 @@ function App() {
                       <AddIcon />
                     </>
                   )}
-                  yello button
+                  Do you have any hereditary diseases
                 </Button>
+
+                
 
                 <Button
                   variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
+                  style={{ width: "35%", height: "50px", borderColor: "black" }}
                 >
                   <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-              </div>
-            </Container>
-            <Container>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "20px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  marginTop: "4%",
-                }}
-              >
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-              </div>
-            </Container>
-            <Container>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "20px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  marginTop: "4%",
-                }}
-              >
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "17%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-              </div>
-            </Container>
-            <Container>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "20px",
-                  marginLeft: "13.5%",
-                  marginTop: "4%",
-                }}
-              >
-                <Button
-                  variant="light"
-                  style={{ width: "20%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
-                </Button>
-
-                <Button
-                  variant="light"
-                  style={{ width: "20%", height: "50px", borderColor: "black" }}
-                >
-                  <AddIcon />
-                  Primary button
+                  Are you habitual to drugs and alcoho
                 </Button>
               </div>
             </Container>
           </div>
-      </>}
+        </>
+      )}
+
+      {step === 6 && (
+        <>
+          <div>
+            <Container>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "20px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginTop: "4%",
+                }}
+              >
+                <Button
+                  variant="light"
+                  style={{ width: "17%", height: "50px", borderColor: "black" }}
+                >
+                  {changecolor === true ? (
+                    <>
+                      <CheckIcon />
+                    </>
+                  ) : (
+                    <>
+                      <AddIcon />
+                    </>
+                  )}
+                 Confirm
+                </Button>
+
+                <Button
+                  variant="light"
+                  style={{ width: "17%", height: "50px", borderColor: "black" }}
+                >
+                  <AddIcon />
+                 cancel
+                </Button>
+
+                <Button
+                  variant="light"
+                  style={{ width: "17%", height: "50px", borderColor: "black" }}
+                >
+                  <AddIcon />
+                  ready to admit
+                </Button>
+
+                <Button
+                  variant="light"
+                  style={{ width: "17%", height: "50px", borderColor: "black" }}
+                >
+                  <AddIcon />
+                  ready to go home
+                </Button>
+              </div>
+            </Container>
+          
+          </div>
+        </>
+      )}
 
       <hr className="hr" />
       <div>
@@ -1321,13 +901,17 @@ function App() {
         )}
 
         {step === 6 ? (
-          <div style={{ display: "flex", marginTop: "-2.5%", marginLeft: "68%" }}>
+          <div
+            style={{ display: "flex", marginTop: "-2.5%", marginLeft: "68%" }}
+          >
             <Button variant="primary" style={{ width: "40%" }} disabled>
               Next
             </Button>
           </div>
         ) : (
-          <div style={{ display: "flex", marginTop: "-2.5%", marginLeft: "68%" }}>
+          <div
+            style={{ display: "flex", marginTop: "-2.5%", marginLeft: "68%" }}
+          >
             <Button
               variant="primary"
               style={{ width: "40%" }}
